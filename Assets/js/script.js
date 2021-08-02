@@ -1,36 +1,52 @@
-// Format For Date In Header
+// Format For Date In Header/Moment js
+
 var time = moment();
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-//Using local storage to save and retrieve data on refresh
-$(".time").click(function() {
-var time = $(this).attr("id");
+//using local storage to pull and retrieve data when refreshed
 
-var schedule = localStorage.getItem(time);
+$(".saveBtn").click(function () {
+  console.log($(this));
+  console.log($(".saveBtn"));
+  var time = $(this).parent().attr("id");
 
-if (schedule !==null) {
-  
-  $(this).children(".schedule").val(schedule);
-}
+  var textarea = $(this).siblings(".textarea").val();
 
+  localStorage.setItem(time, textarea);
+
+})
+$(".time-block").each(function () {
+  console.log($(".time-block"));
+  var time = $(this).attr("id");
+
+  var save = localStorage.getItem(time);
+
+  if (save !== null) {
+
+    $(this).children(".textarea").val(save);
+  }
 });
 
-
-//This saves the text when refreshed
- openPlanner();
- $(".save").on("click", function () {
-   var time = $(this).parent().attr("id");
-
-   var schedule = $(this).siblings(".schedule").val();
-
-   localStorage.setItem(time, schedule);
-
- })
-
-
-
- 
-
+// Past and Present to change text area
+function urgencyNotifier() {
+  hour = time.hours();
+  $(".time-block").each(function() {
+      var Time = parseInt($(this).attr("id"));
+      
+      if (Time > hour) {
+        $(this).removeClass(["past", "present"]).addClass("future");
+      } 
+      else if (Time === hour) {
+        $(this).removeClass(["past", "future"]).addClass("present");
+      } 
+      else {
+        $(this).removeClass(["present", "future"]).addClass("past");
+      }
+  });
+}
+//linked with moment to change color based on time
+var time = moment();
+urgencyNotifier()
 
 
 
