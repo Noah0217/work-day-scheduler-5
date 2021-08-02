@@ -1,6 +1,6 @@
 <h1>📆Work Day Scheduler☕</h1>
 
-<h2>Description<br><h4>simple 9 to 5 work day scheduler to help plan and organize your day. Enter text into one of the available boxes when ready to save<br>click the save icon on the left and your ready to go. Next time you open up the work day scheduler<br>all of your imprortant information will be saved.
+<h2>Description<br><h4> A simple 9 to 5 work day scheduler to help plan and organize your day. Enter text into one of the available boxes when ready to save<br>click the save icon on the left and your ready to go. Next time you open up the work day scheduler all of your imprortant information will be saved.
   
 <h2>🌐Website-https://noah0217.github.io/work-day-scheduler-5</h2>
   
