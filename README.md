@@ -17,7 +17,7 @@
 - <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="javascript" width="40" height="40"/> </a> </p>
   
 <h2>Preview<h2>
-  <img src="https://raw.githubusercontent.com/Noah0217/work-day-scheduler-5/main/assets/images/work-day-scheduler.png" width="1000" height="500"/>
+  <img src="https://raw.githubusercontent.com/Noah0217/work-day-scheduler-5/main/assets/images/work-day-scheduler.png" width="1000" height="400"/>
 
   <h4 align="center">Made With ❤️ by Noah
 
